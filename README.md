@@ -66,5 +66,34 @@ The game is refreshable and can be started where it was leaved off. Data of part
       *Leaderboard and analytics for admin is given,
       *Deployed on Glitch
 
+## How to Play the Game:
+      Level 1: Clues are given on the left side. Ihave also provided answer above
+      Level 2: To be answered accordingly to the option given in same format only.
+      Level 3: only options in small case are to be answere
+      Extra-Level: (Memory game) Two cards can be opened at a time an then they disapperas, your task is to open minimum number of cards and to recignise which two are       similar. once two similar are found and opened they stay open. Continue till all pairs are not opened.
+      Admin Panel: Currently manually the admin are authorised. Leaderboard can be seen attached in the screenshot,. Alos backend for analytics is ready. Need some           changes in UI.
+
 ## Screenshots:
+
+### Login page:
+
 ![Screenshot](ss/sigin.png?raw=true "Signin")
+### Level1 page:
+
+![Screenshot](ss/level1.png?raw=true "Signin")
+### Level2 page:
+
+![Screenshot](ss/level2.png?raw=true "Signin")
+### Level 3 page:
+
+![Screenshot](ss/level3.png?raw=true "Signin")
+### Memory Game page:
+
+![Screenshot](ss/level_extra.png?raw=true "Signin")
+### LeaderBoard page:
+
+![Screenshot](ss/leaderboard.png?raw=true "Signin")
+
+### End page:
+
+![Screenshot](ss/end.png?raw=true "Signin")
