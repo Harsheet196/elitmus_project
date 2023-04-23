@@ -67,4 +67,4 @@ The game is refreshable and can be started where it was leaved off. Data of part
       *Deployed on Glitch
 
 ## Screenshots:
-![Alt text](ss\sigin.png?raw=true "Signin")
+![Screenshot](ss\sigin.png?raw=true "Signin")
