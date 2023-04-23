@@ -46,4 +46,23 @@ This game contains 3 Levels and one additional level.
   The answers of this level is attached here to do check. Answers are: ""
 ### The Second level :
   This level is a Basic Understanding and aptitude in soft skills. Questions are framed such way that it addresses Analytical thinking of the student.
-  Each MCQ has 4 options from which only one is correct. This Level is the CRUCIAL level. As student can be trapped here and find himself in loop **DEADEND** if it answers wrong to any one of the 4 MCQ Question. If all the answers are correct it advances to next level and if he is wrong to any question he goes to extra level where he has to solve a Randomised Memory game. Also the GBugs are reduced if he fails at level 2 each time. After completing his memory game correctly it is then redirected to Level 2 to agin answer the MCQ question. This loop continues till he gives all correct answer. Now this level judges his anlytical thinking to make correct decisoons about time management and Decison making.
+  Each MCQ has 4 options from which only one is correct. This Level is the CRUCIAL level. As student can be trapped here and find himself in loop **DEADEND** if it answers wrong to any one of the 4 MCQ Question. If all the answers are correct it advances to next level and if he is wrong to any question he goes to extra level where he has to solve a Randomised Memory game. Also the GBugs are reduced if he fails at level 2 each time. After completing his memory game correctly it is then redirected to Level 2 to again answer the MCQ question. **This loop continues till he gives all correct answer. Now this level judges his anlytical thinking to make correct decisions about time management and Decison making.** 
+  
+### The Third Level:
+This Level test the team building ability of the candidate. It contains the Questions regarding the this assessment of team building and communication. This is the last level of assessment and then the user is redirected to logout page.
+
+### Admin panel:
+For now admin access is given manually by firebase database. The working of LEaderboard is mentioned in the code also and screenshots are attached. The admin panels backend is ready for data analysis as each levels time taken is monitored and also how many time any student is stuck at a particular is also store. The frontend needs a slight update for admin panel. 
+
+### Refreshable:
+The game is refreshable and can be started where it was leaved off. Data of particulat level of each user is save seperately.
+
+## Tasks achieved from given tasks:
+
+      *More than >> 5 clues game,
+      *Deadends in the form of loop and ponits cutting,
+      *One full finishable game,
+      *Leaderboard and analytics for admin is given,
+      *Deployed on Glitch
+
+## Screenshots:
