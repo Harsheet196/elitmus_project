@@ -50,13 +50,19 @@ Note For development purpose any user who logs in can access leaderboard/admin p
   This level uses almost 8 diffrent clues to fill up the crossword. The questions framed here are more of general knowledge and to the theme, so students can 
   find this level easy and make itself comfortable with the platform. First level is scored by taking how much amount of time is being taken to complete the level.
   The whole game is played with points name "GBugs", which are calculated by formula of time taken by the student to complete.
-  The answers of this level is attached here to do check. Answers are: ""
+  The answers of this level is attached here to do check.
 ### The Second level :
   This level is a Basic Understanding and aptitude in soft skills. Questions are framed such way that it addresses Analytical thinking of the student.
-  Each MCQ has 4 options from which only one is correct. This Level is the CRUCIAL level. As student can be trapped here and find himself in loop **DEADEND** if it answers wrong to any one of the 4 MCQ Question. If all the answers are correct it advances to next level and if he is wrong to any question he goes to extra level where he has to solve a Randomised Memory game. Also the GBugs are reduced if he fails at level 2 each time. After completing his memory game correctly it is then redirected to Level 2 to again answer the MCQ question. **This loop continues till he gives all correct answer. Now this level judges his anlytical thinking to make correct decisions about time management and Decison making.** 
+  Each MCQ has 4 options from which only one is correct. This Level is the CRUCIAL level. As student can be trapped here and find himself in loop **DEADEND** if it answers wrong to any one of the 4 MCQ Question. If all the answers are correct it advances to next level and if he is wrong to any question he goes to extra level where he has to solve a Randomised Memory game. Also the GBugs are reduced if he fails at level 2 each time. After completing his memory game correctly it is then redirected to Level 2 to again answer the MCQ question. **This loop continues till he gives all correct answer. Now this level judges his anlytical thinking to make correct decisions about time management and Decison making.**
   
 ### The Third Level:
 This Level test the team building ability of the candidate. It contains the Questions regarding the this assessment of team building and communication. This is the last level of assessment and then the user is redirected to logout page.
+
+### Answers are: 
+      Level 1: 1.Amongus 2.bananas 3.duckhunt 4.across- splinter 4.down-sonic 5.luigi 6.both-puckman 7.tetris 8.donkeykong
+      Level 2: Listening messages VisualAids six
+      Level 3: bdcb
+
 
 ### Admin panel:
 For now admin access is given manually by firebase database. The working of LEaderboard is mentioned in the code also and screenshots are attached. The admin panels backend is ready for data analysis as each levels time taken is monitored and also how many time any student is stuck at a particular is also store. The frontend needs a slight update for admin panel. 
