@@ -41,6 +41,8 @@ This game contains 3 Levels and one additional level.
   New user comes -->> Registered and Logged in -->> Database updated with new user -->> Game starts ->> USer completes the game -->> Logout
   
   Admin -->> Can visit Leaderboard and analyse
+  
+Note For development purpose any user who logs in can access leaderboard
 
 ## Lets Look at the Game and what it Achieves:
 ### The First level:
