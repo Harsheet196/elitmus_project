@@ -35,6 +35,7 @@ This game contains 3 Levels and one additional level.
   
 ### Basic Structure
   New user comes -->> Registered and Logged in -->> Database updated with new user -->> Game starts ->> USer completes the game -->> Logout
+  
   Admin -->> Can visit Leaderboard and analyse
 
 ## Lets Look at the Game and what it Achieves:
