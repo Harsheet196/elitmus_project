@@ -42,7 +42,7 @@ This game contains 3 Levels and one additional level.
   
   Admin -->> Can visit Leaderboard and analyse
   
-Note For development purpose any user who logs in can access leaderboard
+Note For development purpose any user who logs in can access leaderboard/admin panel
 
 ## Lets Look at the Game and what it Achieves:
 ### The First level:
