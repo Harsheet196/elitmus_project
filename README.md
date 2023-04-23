@@ -71,7 +71,7 @@ The game is refreshable and can be started where it was leaved off. Data of part
       Level 2: To be answered accordingly to the option given in same format only.
       Level 3: only options in small case are to be answere
       Extra-Level: (Memory game) Two cards can be opened at a time an then they disapperas, your task is to open minimum number of cards and to recignise which two are       similar. once two similar are found and opened they stay open. Continue till all pairs are not opened.
-      Admin Panel: Currently manually the admin are authorised. Leaderboard can be seen attached in the screenshot,. Alos backend for analytics is ready. Need some           changes in UI.
+      Admin Panel: Currently manually the admin are authorised. Leaderboard can be seen attached in the screenshot.Also backend for analytics is ready. Need some           changes in UI.
 
 ## Screenshots:
 
