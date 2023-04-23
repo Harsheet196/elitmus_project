@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Elitmus_project</title>
+    
+
+    <!-- custom scripts and styles -->
+    <link rel="stylesheet" href="./login/login.min.css" />
+    <!-- <script src="./scripts/login.js" async defer></script> -->
+  </head>
+
+  <body>
+    <style>
+      .loader-container {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background: #000;
+        z-index: 100;
+        display: none;
+      }
+
+      .loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 60px;
+        width: 160px;
+        margin: 0;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      .circles {
+        position: absolute;
+        left: -5px;
+        top: 0;
+        height: 60px;
+        width: 180px;
+      }
+
+      .circles span {
+        position: absolute;
+        top: 25px;
+        height: 12px;
+        width: 12px;
+        border-radius: 12px;
+        background-color: #efefef;
+      }
+
+      .circles span.one {
+        right: 80px;
+      }
+
+      .circles span.two {
+        right: 40px;
+      }
+
+      .circles span.three {
+        right: 0px;
+      }
+
+      .circles {
+        -webkit-animation: animcircles 0.5s infinite linear;
+        animation: animcircles 0.5s infinite linear;
+      }
+
+      @-webkit-keyframes animcircles {
+        0% {
+          -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+        }
+
+        100% {
+          -webkit-transform: translate(-40px, 0px);
+          transform: translate(-40px, 0px);
+        }
+      }
+
+      @keyframes animcircles {
+        0% {
+          -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+        }
+
+        100% {
+          -webkit-transform: translate(-40px, 0px);
+          transform: translate(-40px, 0px);
+        }
+      }
+
+      .pacman {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 60px;
+        width: 60px;
+      }
+
+      .pacman .eye {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        height: 7px;
+        width: 7px;
+        border-radius: 7px;
+        background-color: #1c163a;
+      }
+
+      .pacman span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 60px;
+        width: 60px;
+      }
+
+      .pacman span::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 30px;
+        width: 60px;
+        background-color: #fffb16;
+      }
+
+      .pacman .top::before {
+        top: 0;
+        border-radius: 60px 60px 0px 0px;
+      }
+
+      .pacman .bottom::before {
+        bottom: 0;
+        border-radius: 0px 0px 60px 60px;
+      }
+
+      .pacman .left::before {
+        bottom: 0;
+        height: 60px;
+        width: 30px;
+        border-radius: 60px 0px 0px 60px;
+      }
+
+      .pacman .top {
+        -webkit-animation: animtop 0.5s infinite;
+        animation: animtop 0.5s infinite;
+      }
+
+      @-webkit-keyframes animtop {
+        0%,
+        100% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+
+        50% {
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+      }
+
+      @keyframes animtop {
+        0%,
+        100% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+
+        50% {
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+      }
+
+      .pacman .bottom {
+        -webkit-animation: animbottom 0.5s infinite;
+        animation: animbottom 0.5s infinite;
+      }
+
+      @-webkit-keyframes animbottom {
+        0%,
+        100% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+
+        50% {
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+
+      @keyframes animbottom {
+        0%,
+        100% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+
+        50% {
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+    </style>
+    <div class="loader-container">
+      <div class="loader">
+        <div class="circles">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </div>
+        <div class="pacman">
+          <span class="top"></span>
+          <span class="bottom"></span>
+          <span class="left"></span>
+          <div class="eye"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- google signin script -->
+    <img src="./login/login.svg" alt="login" id="login-svg" />
+    <div class="sign-in-holder">
+      <img src="./login/signin.svg" alt="sign in button" id="sign-in-img" />
+      <div
+        class="g_id_signin"
+        data-type="standard"
+        data-shape="rectangular"
+        data-theme="outline"
+        data-text="signin_with"
+        data-size="large"
+        data-logo_alignment="left"
+      ></div>
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="./scripts/login.js"></script>
+
+    <div
+      id="g_id_onload"
+      data-client_id="710342604132-e0g9nlv56allvrpq64st6gf662qtn1gm.apps.googleusercontent.com"
+      data-callback="handleCredentialResponse"
+    ></div>
+  </body>
+</html>

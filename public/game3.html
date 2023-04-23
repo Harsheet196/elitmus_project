@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Elitmus_project</title>
+
+    <!-- Manifest.json  -->
+    <meta property="og:title" content=" Elitmus_project" />
+
+    <link rel="stylesheet" href="./mario/mario.min.css" />
+    <script src="./scripts/send.js"></script>
+    <link rel="stylesheet" href="./pacman/msg.min.css" />
+  </head>
+
+  <body>
+    <div id="mobile-view">Please view on PC</div>
+    <div class="msg-container">
+      <p id="msg">message</p>
+      <button id="ok">OK</button>
+    </div>
+    <div class="GameBody">
+      <div class="clouds-1"></div>
+      <div class="clouds-2"></div>
+      <div class="clouds-3"></div>
+      <!-- <div class="hintclouds"></div> -->
+      <div class="questionBox">
+        <div class="title">
+          <p class="quiz-name" id="quiz-name">
+            As you have cleared both the rounds, This round will check your team building capablities.
+          </p>
+        </div>
+        <div class="questions">
+          <div class="codeheader" id="codeheader_css">Tick any one only.</div>
+          <div id="codebox">
+            <pre><code data-language="css">Q1. Which of the following is a potential benefit of team building activities?
+              A. Increased competition among team members
+              B. Improved communication within the team
+              C. Reduced collaboration among team members
+              D. Decreased team morale
+    Ans:<input value="Enter Option" type="text" class="question_input"/>
+        <pre><code data-language="css">Q2. What is a key strategy for promoting collaboration among team members?
+          A. Encouraging individual goals over team goals
+          B. Avoiding open communication channels
+          C. Focusing solely on individual accomplishments
+          D. Facilitating group discussions and decision-making
+    Ans:<input value="Enter Option"" type="text" class="question_input"/>
+        <pre><code data-language="css">Q3. What is a potential consequence of a lack of trust within a team?
+          A. Increased productivity
+          B. Improved morale
+          C. Decreased communication
+          D. Enhanced collaboration   
+    Ans:<input value="Enter Option"" type="text" class="question_input"/>
+        <pre><code data-language="css">Q4.What is a common challenge that teams might face?
+          A. Too much communication
+          B. Lack of conflict resolution skills
+          C. Overreliance on individual goals
+          D. Too much trust within the team
+    Ans:<input value="Enter Option" type="text" class="question_input"/>
+    </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="videoplayer">
+        <img
+          class="videogif"
+          src="https://cdn.glitch.global/4d356214-7b91-41a2-8b89-ab1c1df0710d/mario2.gif"
+          alt="description of gif"
+        />
+      </div>
+      <div class="bottompart">
+        <button
+          class="submitwood"
+          style="border: none; background: none; cursor: pointer"
+        >
+          <img src="./mario/submitboard.svg" alt="" />
+          <!-- <div class="submit"></div> -->
+        </button>
+        <div class="soil">
+          <img src="./mario/soil.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

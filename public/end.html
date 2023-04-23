@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>END |Elitmus_project</title>
+
+    <!-- Manifest.json  -->
+    <meta property="og:title" content="Elitmus_project" />
+
+    <link rel="stylesheet" href="./pacman/end.min.css" />
+  </head>
+
+  <body>
+    <p>
+      Game Over ☠️
+      <button id="sign-out">Sign Out</button>
+    </p>
+    <script>
+      const postData = async (url = "", data = {}) => {
+        const response = await fetch(url, {
+          method: "POST",
+          credentials: "same-origin",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+        return response.json();
+      };
+
+      const signOut = async () => {
+        console.log("logout");
+        let res = await postData("/logout", {});
+        console.log(res);
+      };
+      window.onload = async () => {
+        document.getElementById("sign-out").onclick = async () => {
+          await signOut();
+          await new Promise((resolve) => setTimeout(resolve, 2000));
+          window.location = "/";
+        };
+      };
+    </script>
+  </body>
+</html>

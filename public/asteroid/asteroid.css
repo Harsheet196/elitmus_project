@@ -1,0 +1,316 @@
+@font-face {
+    font-family: Pixeboy;
+    src: url(./../fonts/Pixeboy-z8XGD.ttf);
+}
+
+body {
+    width: 100vh;
+    background-color: #080A17;
+    overflow-x: hidden;
+}
+
+.vector_bottom {
+    z-index: 0;
+    position: absolute;
+    top: 90vh;
+    width: 100vw;
+}
+
+.vector_bottom img {
+    width: 105vw;
+}
+
+.stars {
+    bottom: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.text-box {
+    display: block;
+    padding: 40px;
+    width: 40%;
+    height: auto;
+    color: white;
+    font-size: 22px;
+    font-family: 'Titillium Web';
+    background: #080A17;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 35px;
+}
+
+.planet__red {
+    position: absolute;
+    top: 5vh;
+    right: 12vw;
+    cursor: pointer;
+    transition: transform 0.5 ease-in-out;
+    -webkit-transition: -webkit-transform 1s ease;
+    -moz-transition: -moz-transform 1s ease;
+    -o-transition: -o-transform 1s ease;
+    transition: transform 1s ease;
+}
+
+.planet__red:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+
+.planet__red img {
+    height: 10vh;
+}
+
+.coins {
+    position: absolute;
+    top: 4vh;
+    right: 4vw;
+}
+
+.coins img {
+    height: 6vh;
+}
+
+.planet__yellow {
+    position: absolute;
+    left: 7vw;
+    top: 15vh;
+}
+
+.planet__purple {
+    position: absolute;
+    width: 74px;
+    height: 91.25px;
+    right: 10vw;
+    top: 35vh;
+}
+
+.spaceship {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5vw;
+    position: absolute;
+    left: 10vw;
+    top: 65vh;
+}
+
+.spaceship img {
+    height: 8vh;
+}
+
+#spaceship2 {
+    position: absolute;
+    transform: translateX(8px);
+    z-index: 2;
+}
+
+#spaceship1 {
+    z-index: 2;
+    animation: flicker 700ms infinite;
+}
+
+@keyframes flicker {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ammo {
+    z-index: 0;
+    animation: move 1s infinite;
+    top: 68vh;
+    position: absolute;
+}
+
+@keyframes move {
+    from {
+        left: 11vw;
+    }
+
+    to {
+        left: 70vw;
+    }
+}
+
+.ammo img {
+    width: 30px;
+}
+
+.text-box-Small {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+
+.texts {
+    border-radius: 5px;
+    width: 390px;
+    position: relative;
+    box-shadow: 3px 3px;
+    font-family: 'Pixeboy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: #737373;
+    outline: 4px solid #FFFFFF;
+    z-index: 101;
+    margin-bottom: 50px;
+}
+
+.enemy {
+    width: 50px;
+    height: 50px;
+}
+
+.enemies {
+    position: absolute;
+    top: 65vh;
+    display: grid;
+    row-gap: 6px;
+}
+
+.enemies1 {
+    position: absolute;
+    top: 42vh;
+    display: grid;
+    row-gap: 6px;
+}
+
+.submitbtn {
+    position: fixed;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.2 ease-in;
+    right: 40px;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 30px;
+    padding-right: 20px;
+    background: transparent;
+}
+
+.submitbtn img {
+    transition: 0.2 ease-in;
+}
+
+.submitbtn img:hover {
+    transform: scale(1.1);
+}
+
+.submitbtn img:active {
+    transform: scale(1);
+}
+
+.content-holder {
+    display: flex;
+    width: 100vw;
+    /* background: cyan; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    z-index: 100;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.content-1 {
+    display: flex;
+    width: 100vw;
+    /* background: red; */
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sample {
+    display: grid;
+    font-family: 'Titillium Web';
+    font-size: 22px;
+    height: auto;
+    width: 20%;
+    background-color: #080A17;
+    padding: 40px;
+    border: 1px solid white;
+    border-radius: 35px;
+}
+
+.sInput {
+    padding-left: 15px;
+    color: white;
+    background-color: transparent;
+    width: 15vw;
+    text-align: centre;
+    line-height: 3vh;
+    justify-content: center;
+}
+
+.sOutput {
+    padding-left: 15px;
+    color: white;
+    margin-top: 3px;
+    background-color: transparent;
+    width: 15vw;
+    text-align: centre;
+    line-height: 3vh;
+}
+
+.input {
+    font-family: 'Titillium Web';
+    font-size: 22px;
+    background-color: #080A17;
+    width: 20%;
+    padding: 40px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    z-index: 100;
+}
+
+.headings {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.line {
+    background-color: white;
+    height: 2px;
+    margin: 30px 0;
+    width: 16vw;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .content-1 {
+        /* background: cyan; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vector_bottom {
+        top: 120vh;
+        width: 90%;
+    }
+
+    .vector_bottom img {
+        width: 50vw;
+    }
+
+    .stars img {
+        width: 110vw;
+    }
+
+}

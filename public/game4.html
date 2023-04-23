@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Elitmus_project</title>
+
+    <!-- Manifest.json  -->
+    <meta property="og:title" content=" Elitmus_project" />
+
+    <link rel="stylesheet" href="./mario/mario.min.css" />
+    <script src="./scripts/send.js"></script>
+    <link rel="stylesheet" href="./pacman/msg.min.css" />
+  </head>
+
+  <body>
+
+    <style>
+      .grid { 
+  width: 90%; 
+  
+  display: flex; 
+  flex-wrap: wrap; 
+        
+  } 
+  
+  .grid img { 
+  margin: 2px; 
+  transform-style: preserve-3d; 
+  transition: transform 0.5s; 
+  } 
+  .audio{
+    display:none
+  }
+  .grid img.flip { 
+  transform: rotateY(180deg); 
+  } 
+  
+  .popup { 
+  background: red; 
+  width: 200px; 
+  height: 200px; 
+  position: fixed;
+  z-index:20;
+  top: 100px;
+  left: 100px; display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+  }
+  
+  .data { 
+  display: flex; 
+  justify-content: space-between; 
+  padding: 20px 30px; 
+  font-size: 23px; 
+  } 
+  
+  .data span { 
+  color: rgb(206, 121, 11);
+  font-size: 30px; 
+  }
+  .questions img {
+    height: 100px;
+    width: 100px;
+}
+  </style>
+
+
+
+
+    <div id="mobile-view">Please view on PC</div>
+    <div class="msg-container">
+      <p id="msg">message</p>
+      <button id="ok">OK</button>
+    </div>
+    <div class="GameBody">
+      <div class="clouds-1"></div>
+      <div class="clouds-2"></div>
+      <div class="clouds-3"></div>
+      <!-- <div class="hintclouds"></div> -->
+
+      <div class="questionBox">
+        <div class="title">
+          <p class="quiz-name" id="quiz-name">
+            As you have solved the Question 2 Incorrectly, you have be penalised. Now you have to clear this round to return the Second round.Every time you mark wrong answer in Question 2 you will be brought here
+          </p>
+        </div>
+        <div class="questions">
+          <div class="codeheader" id="codeheader_js">Memory Game</div>
+          <div id="codebox">
+            <div class="container">
+              <div class="data">
+              <div class="score">Score : <span class="scoreBoard">0</span></div>
+              <div class="click">Click : <span class="clickBoard">0</span></div>
+              </div>
+              <div class="grid">
+              <div class="popup">
+              <button class="playAgain">play Again</button>
+              </div>
+              </div>
+                <div class="audio">
+                  <audio controls>
+                    <source =src"https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3" type="audio/mpeg" id="source"></source>
+                  </audio>
+                </div>
+              </div>
+              <input id="input" type="hidden" class="question_input"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="videoplayer">
+        <img
+          class="videogif"
+          src="https://cdn.glitch.global/4d356214-7b91-41a2-8b89-ab1c1df0710d/mario3.svg?v=1669979735250"
+          alt="description of gif"
+        />
+      </div>
+
+      <div class="bottompart">
+        <button
+          class="submitwood"
+          style="border: none; background: none; cursor: pointer"
+        >
+          <img src="./mario/submitboard.svg" alt="" />
+          <!-- <div class="submit"></div> -->
+        </button>
+        <div class="soil">
+          <img src="./mario/soil.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./game.js">
+    </script>
+  </body>
+</html>

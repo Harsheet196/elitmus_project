@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Elitmus_project</title>
+
+    <!-- Manifest.json  -->
+    <meta property="og:title" content="Elitmus_project" />
+
+    <link rel="stylesheet" href="./mario/mario.min.css" />
+    <script src="./scripts/send.js"></script>
+    <link rel="stylesheet" href="./pacman/msg.min.css" />
+  </head>
+
+  <body>
+    <div id="mobile-view">Please view on PC</div>
+    <div class="msg-container">
+      <p id="msg">message</p>
+      <button id="ok">OK</button>
+    </div>
+    <div class="GameBody">
+      <div class="clouds-1"></div>
+      <div class="clouds-2"></div>
+      <div class="clouds-3"></div>
+      <!-- <div class="hintclouds"></div> -->
+      <div class="questionBox">
+        <div class="title">
+          <p class="quiz-name" id="quiz-name">
+            Answer the following MCQ questions. Each Question has only one correct answer. Negative points if Answered wrong.
+          </p>
+        </div>
+        <div class="questions">
+          <div class="codeheader" id="codeheader_css">MCQ's. </div>
+          <div id="codebox">
+            <pre><code data-language="css">Q1. There is clear distniction between _______ and hearing. 
+              1.Talking 2.Listening
+              3.Understanding 4.Chatting
+    Ans:<input value="Your ans" type="text" class="question_input"/>
+        <pre><code data-language="css">Q2. Sending ______ is much quicker and easier than writing letters.
+          1.Telegram  2.messages
+          3.fax 4.emails
+    Ans:<input value="Your ans" type="text" class="question_input"/>
+        <pre><code data-language="css">Q3. _____ can improve the understanding your idea and add spice to your presentation.
+          1.Talking 2.Visual Aids
+          3.Introducing 4.Questioning
+    Ans:<input value="Your ans" type="text" class="question_input"/>
+        <pre><code data-language="css">Q4. Applying the ___ thinking hats method to the problems faced in the organisation, can solve them really fast.
+        1.Six 2.five
+        3.Seven 4.Two
+    Ans:<input value="Your ans in string" type="text" class="question_input"/>
+    </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="videoplayer">
+        <img
+          class="videogif"
+          src="https://cdn.glitch.global/4d356214-7b91-41a2-8b89-ab1c1df0710d/mario1.gif"
+          alt="description of gif"
+        />
+      </div>
+      <div class="bottompart">
+        <button
+          class="submitwood"
+          style="border: none; background: none; cursor: pointer"
+        >
+          <img src="./mario/submitboard.svg" alt="" />
+          <!-- <div class="submit"></div> -->
+        </button>
+        <div class="soil">
+          <img src="./mario/soil.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

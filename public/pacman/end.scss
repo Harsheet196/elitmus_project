@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Pixeboy;
+    src: url(./../fonts/Pixeboy-z8XGD.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #262626;
+    color: #262626;
+    overflow: hidden;
+}
+
+p {
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: Pixeboy;
+}
+
+button {
+    font-family: Pixeboy;
+    color: #fff;
+    outline: none;
+    border: none;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 10px 34px;
+    font-size: 25px;
+    cursor: pointer;
+    background: transparent;
+
+    &:hover {
+        transform: scale(.95);
+    }
+
+    &:active {
+        transform: scale(.9);
+    }
+}
