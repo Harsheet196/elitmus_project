@@ -1,6 +1,7 @@
 # Elitmus_project
 
 Link: https://elitmus-project.glitch.me/game
+
 Link for the admin panel(Leaderboard): https://elitmus-project.glitch.me/leaderboard
 
 Hey all, This is a project related to the task assigned by E_Litmus for their Second round of summer internship oppurtunity.
@@ -27,7 +28,7 @@ For the this task we were supposed to create a full fledged website which will h
 ## Proposed Solution and Devlopment:
 
 The Theme of whole Project is set to Retro and name for theme is Wreck-it-retro. It is showcasing retro feeling using our super favorite Mario games animation.
-This game contains 3 Levels and one additional level.
+This game contains 3 Levels and one additional level. You can find the screenshots below.
 
 ### Tech Stack:
   1. Node.Js as server..
